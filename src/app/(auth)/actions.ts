@@ -11,9 +11,7 @@ export async function signInWithPassword(_: AuthState, formData: FormData): Prom
   const supabase = getServerSupabase()
 
   const { error } = await supabase.auth.signInWithPassword({ email, password })
-  if (error) {
-    return { error: error.message }
-  }
+  if (error) return { error: error.message }
   redirect('/admin')
 }
 
