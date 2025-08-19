@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Shop Admin",
-  description: "Admin panel with Supabase auth + RLS",
+  title: 'Savi Silks',
+  description: 'Admin panel with Supabase auth + RLS',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
