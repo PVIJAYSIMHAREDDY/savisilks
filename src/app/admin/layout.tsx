@@ -15,9 +15,7 @@ export default async function AdminLayout({ children }: { children: ReactNode })
     .eq('id', user.id)
     .maybeSingle()
 
-  if (error || !profile || profile.role !== 'admin') {
-    redirect('/admin/login')
-  }
+  if (error || !profile || profile.role !== 'admin') redirect('/admin/login')
 
   return (
     <div className="min-h-screen grid grid-rows-[auto_1fr]">
