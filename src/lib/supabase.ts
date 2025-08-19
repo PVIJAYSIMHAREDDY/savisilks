@@ -1,5 +1,5 @@
-import { createBrowserClient } from '@supabase/supabase-js'
-import { createServerClient, type CookieOptions } from '@supabase/ssr'
+// src/lib/supabase.ts
+import { createServerClient, createBrowserClient, type CookieOptions } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 
 export function getBrowserSupabase() {
